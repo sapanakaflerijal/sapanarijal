@@ -7,20 +7,20 @@ body {
     line-height: 1.428571429;
     color: #333333;
     background-color: #ffffff;
+	height:100%;
 }
 
 body.padTop {
     overflow: visible;
 	margin: 0px;
 	padding: 0px;
+	height:100%;
 }
 
 #wrap {
-    height: auto !important;
-    height: 100%;
-    min-height: 100%;
-    padding: 0 0 48px;
-    margin-bottom: -48px;
+	min-height:100%;
+	position:relative;
+    padding:0px;
 	background-color: #f8f8f8;
 }
 
@@ -86,7 +86,7 @@ hr {
 
 .navbar-header {
     float: left;
-    margin-left: 60px;
+    margin-left: 15px;
 }
 .navbar-header img {
     vertical-align: middle;
@@ -125,6 +125,7 @@ hr {
   flex-direction: row;            
   flex-wrap: nowrap;              
   justify-content: space-between; 
+  padding-bottom:50px;
 }
 
 /* -----------------left-------------------*/
@@ -272,6 +273,7 @@ th {
  	border-right: 1px solid rgb(216, 215, 215);
     border-left: 1px solid rgb(216, 215, 215);
     border-bottom: 1px solid rgb(216, 215, 215);
+	min-height:481px;
 }
 	
 #content, #right {
@@ -338,9 +340,50 @@ th {
     background-color: #f8f8f8;
     border: 1px solid rgb(216, 215, 215);
 	height: 48px;
+	padding:0px 15px;
+	position:relative;
+	bottom:0;
+	left:0;
 }
 
 #footer p {
     padding: 12px 0 0;
     text-align: center;
+	float:left;
+	}
+	
+.footer-right p{
+	float:right;
+	}
+	
+.footer-left{
+	float:left;
+	display:block;
 }
+
+.footer-right{
+	float:right;
+	display:block;
+}
+
+#footer a:hover { 
+    text-decoration: underline;
+	}
+/*---------------------------slider------------*/	
+.w3-content{
+	width:100%;
+	margin:50px 100px;
+	
+	}
+	
+.mySlides{
+	border: 1px solid rgb(216, 215, 215);
+	background:#3193C6;
+	color:#fff;
+	padding:40px;
+	min-height:300px;
+	box-shadow: 1px 0px 3px 2px rgba(0, 0, 0, 0.2);
+	}
+	
+.mySlides h1{
+	text-align:center;}
